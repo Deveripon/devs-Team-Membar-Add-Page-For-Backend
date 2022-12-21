@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Product Page</title>
+		<title>Add Team Member</title>
 		<!-- //main css file -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<!-- //bootstrap css file -->
@@ -23,225 +23,85 @@
 		<section class="team-member-section">
 			<div class="container">
 				<div class="row my-5">
-					<div class="col-md-4 col-12">
-						<div class="team-member-add-form">
-							<form action="" class="member-add-form">
-								<div class="card">
-									<div class="card-header">
-										<h3 class="card-title">Add Developer</h3>
+					<div class="col-12 col-md-3">
+						<form action="" class="team-member-form">
+							<div class="card">
+								<h3>Add Developer</h3>
+								<hr />
+								<div class="card-body">
+									<div class="form-group">
+										<label for="name" class="form-label">Name</label>
+										<input
+											type="text"
+											name="name"
+											id="name"
+											placeholder="name"
+											class="form-control" />
 									</div>
-									<div class="card-body">
-										<div class="form-group">
-											<input
-												type="text"
-												name="name"
-												placeholder="name"
-												class="form-control" />
-										</div>
-										<div class="form-group">
-											<input
-												type="text"
-												name="email"
-												placeholder="email"
-												class="form-control" />
-										</div>
-										<div class="form-group">
-											<input
-												type="text"
-												name="cell"
-												placeholder="cell"
-												class="form-control" />
-										</div>
-										<div class="form-group">
-											<input type="radio" name="gender" id="male" /><label
-												for="male"
-												>Male</label
-											>
-											<br />
-											<input type="radio" name="gender" id="female" /><label
-												for="female"
-												>Female</label
-											>
-										</div>
-
-										<div class="form-group">
-											<p>Skill</p>
-
-											<label for="laravel">
-												<input
-													type="checkbox"
-													name="skill"
-													id="laravel"
-													value="Laravel Developer" />Laravel Developer
-											</label>
-											<br />
-											<label for="Mern">
-												<input
-													type="checkbox"
-													name="skill"
-													id="Mern"
-													value="Mern Steak Developer" />Mern Steak Developer
-											</label>
-											<br />
-											<label for="asp">
-												<input
-													type="checkbox"
-													name="skill"
-													id="asp"
-													value="ASP.net Developer" />ASP.net Developer
-											</label>
-											<br />
-											<label for="python">
-												<input
-													type="checkbox"
-													name="skill"
-													id="python"
-													value="Python Developer" />Python Developer
-											</label>
-											<br />
-										</div>
-										<div class="form-group">
-											<input
-												type="text"
-												name="devsphoto"
-												placeholder="User Image Link"
-												class="form-control" />
-										</div>
+									<div class="form-group">
+										<label for="">Skill</label>
+										<br />
+										<input
+											type="checkbox"
+											value="Mern Steak Developer"
+											name="skill"
+											id="mern" /><label for="mern">Mern Steak Developer</label>
+										<br />
+										<input
+											type="checkbox"
+											name="skill"
+											value="Python Developer"
+											id="python" /><label for="python">Python Developer</label>
+										<br />
+										<input
+											type="checkbox"
+											name="skill"
+											value="Laravel Developer"
+											id="laravel" /><label for="laravel"
+											>Laravel Developer</label
+										>
+										<br />
+										<input
+											type="checkbox"
+											name="skill"
+											value="Ios Developer"
+											id="ios" /><label for="ios">Ios Developer</label>
+										<br />
 									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-12 col-md-8">
-						<div class="team-member-wrapper">
-							<div class="row">
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
+									<div class="form-group">
+										<label for="photo" class="form-label">Photo</label>
+										<input
+											type="text"
+											name="photo"
+											id="photo"
+											placeholder="Photo Link"
+											class="form-control" />
 									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
+									<div class="form-group">
+										<input
+											type="radio"
+											name="gender"
+											id="male"
+											value="Male" /><label for="male">Male</label>
+										<br />
+										<input
+											type="radio"
+											name="gender"
+											id="female"
+											value="female" /><label for="female">Female</label>
+										<br />
 									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 col-lg-4 my-1">
-									<div class="member">
-										<div class="card text-center" style="width: 18rem">
-											<img
-												src="https://energaia.com/wp-content/uploads/2020/10/team-member-8.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Shahadat Hussain Ripon</h5>
-												<p class="card-text">Laravel Developer</p>
-												<p class="card-text">riponmiah858@gmil.com</p>
-												<p class="card-text">01913509868</p>
-												<a href="#" class="btn btn-info"
-													><i
-														class="fa fa-eye text-light"
-														aria-hidden="true"></i
-												></a>
-											</div>
-										</div>
-									</div>
+									<input
+										class="btn btn-primary w-100"
+										type="submit"
+										value="Add New Developer" />
 								</div>
 							</div>
+						</form>
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="team-member-wrapper">
+							<div class="row d-flex justify-content-center member-space"></div>
 						</div>
 					</div>
 				</div>
