@@ -1,0 +1,37 @@
+//Import all sass file
+
+//import utility folder
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/helper";
+
+//import vendor folder
+
+@import "./vendor/bootstrap";
+@import "./vendor/font_awoseme";
+
+//import base folder
+@import "./base/reset";
+@import "./base/typography";
+
+//import Component folder
+@import "./components/card";
+
+//import layout folder
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar";
+@import "./layout/grid";
+@import "./layout/forms";
+@import "./layout/footer";
+
+//import pages folder
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/contact";
+
+//import theme folder
+@import "./theme/app";
+@import "./theme/theme";
